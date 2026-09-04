@@ -441,7 +441,7 @@ export function EnvelopeOpening({
                 <path d="M5,8 Q8,12 12,5" stroke="#b89645" strokeWidth="0.5" fill="none" opacity="0.4" className="shimmer"/>
               </svg>
 
-              <div className="text-eyebrow">Promise of Love</div>
+              <div className="text-eyebrow">LOVE IS ALWAYS AND FOREVER</div>
 
               <div className="divider">
                 <div className="divider-line" />
@@ -450,9 +450,9 @@ export function EnvelopeOpening({
               </div>
 
               <h1 className="text-names">
-                Apsara
+                Sajith
                 <span className="text-ampersand">&</span>
-                Teshan
+                Sashini
               </h1>
 
               <div className="divider">
@@ -462,10 +462,10 @@ export function EnvelopeOpening({
               </div>
 
               <div className="text-details">
-                Request the honour of your presence<br />
-                to celebrate their marriage at<br />
-                <span className="text-church">Centrium Ballroom, Avenra Gardens</span><br />
-                Negombo
+                You are cordiality invited to the celebrate the marriage<br />
+                at<br />
+                <span className="text-church">THE EPITOME HOTEL</span><br />
+                KURUNEGALA
               </div>
             </div>
           </div>
