@@ -7,6 +7,8 @@ const images = [
   { id: 2, url: '/pre/WhatsApp%20Image%202026-09-07%20at%2019.38.20%20(1).jpeg', title: 'Our Journey' },
   { id: 3, url: '/pre/WhatsApp%20Image%202026-09-07%20at%2019.38.20.jpeg', title: 'A Thousand Words' },
   { id: 4, url: '/pre/WhatsApp%20Image%202026-09-07%20at%2019.38.21.jpeg', title: 'Endless Love' },
+  { id: 5, url: '/pre/WhatsApp%20Image%202026-09-07%20at%2022.13.22%20(1).jpeg', title: 'Forever' },
+  { id: 6, url: '/pre/WhatsApp%20Image%202026-09-07%20at%2022.13.22.jpeg', title: 'Always' },
 ];
 
 export const Gallery: React.FC = () => {
@@ -35,21 +37,21 @@ export const Gallery: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Elegant Staggered Grid, highly optimized for mobile view */}
-      <div className="max-w-6xl mx-auto px-3 sm:px-8 relative z-10 pb-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 md:gap-8">
-          {images.map((image, index) => (
-            <motion.div
-              key={image.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: index * 0.15, ease: "easeOut" }}
-              className={`relative group cursor-pointer 
-                ${index === 0 || index === 2 ? 'mb-8 sm:mb-12' : 'mt-8 sm:mt-12'}
-                md:mt-0 md:mb-0
-                ${index % 2 === 1 ? 'md:translate-y-16' : ''}
-              `}
+      {/* Horizontal Scrolling Marquee */}
+      <div className="w-full relative z-10 pb-16 overflow-hidden">
+        <motion.div
+          className="flex gap-4 sm:gap-6 md:gap-8 px-4 w-max"
+          animate={{ x: [0, "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            ease: "linear",
+            duration: 40,
+          }}
+        >
+          {[...images, ...images].map((image, index) => (
+            <div
+              key={`${image.id}-${index}`}
+              className="w-[60vw] sm:w-[40vw] md:w-[30vw] lg:w-[25vw] max-w-sm flex-shrink-0 relative group cursor-pointer"
               onClick={() => setSelectedImage(image.url)}
             >
               <div className="relative overflow-hidden rounded-xl sm:rounded-[2rem] shadow-[0_15px_35px_rgba(176,137,104,0.15)] bg-white/60 p-1 sm:p-3 border border-white/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(176,137,104,0.25)]">
@@ -71,9 +73,9 @@ export const Gallery: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* Fullscreen Premium Overlay */}

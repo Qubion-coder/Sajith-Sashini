@@ -84,6 +84,19 @@ export function InvitationContent({
         </div>
       </DeferredMount>
 
+      <DeferredMount active={active} delay={210}>
+        <div className="py-12 sm:py-16 px-4 sm:px-8 w-full flex justify-center bg-gradient-to-b from-transparent via-brand-rose/10 to-transparent">
+          <div className="relative max-w-4xl w-full rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(176,137,104,0.15)] border border-white/60 p-2 sm:p-4 bg-white/40 backdrop-blur-sm">
+            <img 
+              src="/pre/WhatsApp%20Image%202026-09-07%20at%2019.38.19.jpeg" 
+              alt="Beautiful Moment" 
+              className="w-full h-auto rounded-xl sm:rounded-[2.5rem]"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </DeferredMount>
+
       <DeferredMount active={active} delay={240} minHeight="40vh">
         <div className="pt-24 pb-12 sm:py-32 bg-gradient-to-b from-brand-lavender/10 via-brand-rose/30 to-brand-rose/20 relative overflow-hidden">
           <Location event={eventParam} />
@@ -94,11 +107,13 @@ export function InvitationContent({
         <Gallery />
       </DeferredMount>
 
+
+
       <DeferredMount active={active} delay={360} minHeight="20vh">
         <div className="py-24 sm:py-32 relative overflow-hidden">
           <div className="absolute inset-0">
             <img 
-              src="/ChatGPT Image Jul 5, 2026, 02_20_06 AM.png"
+              src="/ChatGPT Image Jul 5,rr 2026, 02_20_06 AM.png"
               alt="Countdown Background"
               className="w-full h-full object-cover" 
             />
@@ -110,6 +125,19 @@ export function InvitationContent({
           </div>
           <div className="relative z-10">
             <Countdown targetDate={weddingDate} />
+          </div>
+        </div>
+      </DeferredMount>
+
+      <DeferredMount active={active} delay={390}>
+        <div className="py-12 sm:py-16 px-4 sm:px-8 w-full flex justify-center bg-gradient-to-b from-transparent via-brand-lavender/10 to-transparent">
+          <div className="relative max-w-4xl w-full rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(176,137,104,0.15)] border border-white/60 p-2 sm:p-4 bg-white/40 backdrop-blur-sm">
+            <img 
+              src="/pre/WhatsApp%20Image%202026-09-07%20at%2019.38.19.jpeg" 
+              alt="Special Moment" 
+              className="w-full h-auto rounded-xl sm:rounded-[2.5rem]"
+              loading="lazy"
+            />
           </div>
         </div>
       </DeferredMount>
