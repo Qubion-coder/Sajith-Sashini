@@ -133,7 +133,7 @@ export function InvitationContent({
         <div className="py-12 sm:py-16 px-4 sm:px-8 w-full flex justify-center bg-gradient-to-b from-transparent via-brand-lavender/10 to-transparent">
           <div className="relative max-w-4xl w-full rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(176,137,104,0.15)] border border-white/60 p-2 sm:p-4 bg-white/40 backdrop-blur-sm">
             <img 
-              src="/pre/WhatsApp%20Image%202026-09-07%20at%2019.38.19.jpeg" 
+              src="/pre/WhatsApp%20Image%202026-09-07%20at%2022.13.22.jpeg" 
               alt="Special Moment" 
               className="w-full h-auto rounded-xl sm:rounded-[2.5rem]"
               loading="lazy"
