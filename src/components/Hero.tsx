@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ event = 'both', inviteeName }) => {
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   return (
-    <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-blush/30">
+    <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-rose/20">
       <motion.div
         className="absolute inset-0 z-0 origin-center"
         style={useParallax ? { y: y1, scale } : undefined}
