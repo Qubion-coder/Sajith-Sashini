@@ -89,6 +89,15 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ inviteeName = '', eventName 
               : `Your presence means the world to us. Please kindly let us know if you will be able to join our celebration.`
             }
           </p>
+
+          <div className="mt-6 mb-8 text-center lg:text-left">
+            <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-stone-500 mb-2">RSVP via WhatsApp or Call</p>
+            <p className="text-stone-800 font-serif text-lg mb-1">Prasanna Perera</p>
+            <a href="tel:+94717431247" className="text-brand-plum font-semibold hover:text-[#D4AF37] transition-colors inline-flex items-center gap-2">
+              +94 71 743 1247
+            </a>
+          </div>
+
           <div className="w-12 h-[1px] bg-brand-lavender/50 mx-auto lg:mx-0 mt-8" />
         </div>
 
